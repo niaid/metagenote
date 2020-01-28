@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BioSampleValidate>
+  <Action status="processed-ok" action_id="SUB123456-1" target_db="BioSample">
+    <Response status="processed-ok">
+      <Message error_code="34" severity="warning" error_source="data">Submission processing may be delayed due to necessary curator review. Please check spelling of organism, current information could not be resolved automatically and will require a taxonomy consult.</Message>
+      <Object target_db="BioSample" object_id="" spuid="ADENDQ44UPS/s1" spuid_namespace="NIAID Bioinformatics and Computational Biosciences Branch"/>
+    </Response>
+  </Action>
+</BioSampleValidate>
+

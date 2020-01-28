@@ -1,0 +1,3 @@
+#MIGS.eu.host-associated.4.0
+sample_name	collection_date	description	env_biome	env_feature	env_material	estimated_size	geo_loc_name	host	isol_growth_condt	lat_lon	num_replicons	organism	cultivar	ecotype	isolate	strain	ploidy	propagation	sample_title	seq_methods	host_taxid
+ADENDQ44UPS/s1	23-Jan-2020	not collected	not collected	not collected	not collected	not collected	not collected	Homo sapiens	not collected	not collected	not collected	not collected	not collected	not collected	not collected	not collected	not collected	not collected	not collected	not collected	9606

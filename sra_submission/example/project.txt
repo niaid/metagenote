@@ -1,0 +1,12 @@
+Username	NIAID-BCBB
+Last	BCBB
+First	NIAID
+Center	NIAID Bioinformatics and Computational Biosciences Branch
+Type	Center
+Website	https://www.niaid.nih.gov/research/bioinformatics-computational-biosciences-branch
+ProjectName	Example biological experiment
+ProjectTitle	Example biological experiment
+Description	Example project for NCBI SRA submission  Contact: conrad.shyu@nih.gov.
+Email	conrad.shyu@nih.gov
+Release	2020-01-16
+Resource	{"METAGENOTE":"https://metagenote.niaid.nih.gov"}

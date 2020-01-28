@@ -1,0 +1,1 @@
+ADENDQ44UPS/s1,3_R1_001s.fastq.gz,3_R2_001s.fastq.gz
