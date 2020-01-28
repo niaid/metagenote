@@ -15,12 +15,12 @@ The NCBI SRA (Sequence Read Archive) promises great biological insight if one co
 However, the metadata submitted to the SRA remain largely underutilized because of the poor structure of the data associated
 with each sample. The SRA generally does not define a standardized set of terms that should be used to describe the
 biological samples. As a consequence, the metadata include many synonyms, spelling variants and references to outside
-sources of information. As a consequence, it has been difficult to perform large-scale analyses that study the relationships
-between molecular processes and phenotype across diverse diseases, tissues and cell types present in the SRA. A major
-component of biological metadata is the sample attributes. Sample attributes define the material under investigation and can
-include sample characteristics such as cell type, collection site and phenotypic information like disease state. Since a
-single sample can be used in multiple experiments and be subjected to different technologies and treatments, information
-regarding such methodology aspects generally appears on the experimental metadata.
+sources of information. It has been difficult to perform large-scale analyses that study the relationships between molecular
+processes and phenotype across diverse diseases, tissues and cell types present in the SRA. A major component of biological
+metadata is the sample attributes. Sample attributes define the material under investigation and can include sample
+characteristics such as cell type, collection site and phenotypic information like disease state. Since a single sample can
+be used in multiple experiments and be subjected to different technologies and treatments, information regarding such
+methodology aspects generally appears on the experimental metadata.
 
 Standardized descriptions for metadata, such as <q>Minimum Information about a (Meta)Genome Sequence (MIGS/MIMS/MIMARKS)</q>,
 was first developed by the [Genomic Standards Consortium (GSC)](https://press3.mcs.anl.gov/gensc/). The goal of GSC standard
