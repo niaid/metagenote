@@ -10,8 +10,8 @@ scientific community to understand and disseminate important details of the work
 commonplace, it is critically important that all biological samples should be made publicly available with standardized
 metadata reporting so that these samples can be reanalyzed to independently assess the veracity of the conclusions.
 
-# Ontology in METAGENOTE #
-The NCBI SRA (Sequence Read Archive) promises great biological insight if one could analyze the data in the aggregate. 
+# Metadata Standardization in METAGENOTE #
+The NCBI SRA (Sequence Read Archive) promises great biological insight if one could analyze the data in the aggregate.
 However, the metadata submitted to the SRA remain largely underutilized because of the poor structure of the data associated
 with each sample. The SRA generally does not define a standardized set of terms that should be used to describe the
 biological samples. As a consequence, the metadata include many synonyms, spelling variants and references to outside
@@ -46,7 +46,7 @@ application focused ontology modelling the experimental variables in multiple re
 Therapeutic Target Validation.
 * [Environment Ontology](http://purl.bioontology.org/ontology/ENVO): The Experimental Factor Ontology (EFO) provides a
 systematic description of many experimental variables available in EBI databases. It combines parts of several biological
-ontologies, such as UBERON anatomy, ChEBI chemical compounds, and Cell Ontology. 
+ontologies, such as UBERON anatomy, ChEBI chemical compounds, and Cell Ontology.
 * [Foundational Model of Anatomy](http://purl.bioontology.org/ontology/FMA): The Foundational Model of Anatomy Ontology
 (FMA) is concerned with the representation of classes or types and relationships necessary for the symbolic representation
 of the phenotypic structure of the human body in a form that is understandable to humans and is also navigable, parseable
