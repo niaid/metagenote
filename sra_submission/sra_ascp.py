@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 __email__ = "conrad.shyu@nih.gov"
-__author__ = ["Conrad Shyu", "David Liou", "Mariam Quinones", "Michael Dolan"]
+__author__ = "Conrad Shyu"
 __version__ = "2.1"
 __branch__ = "Bioinformatics and Computational Biosciences Branch"
 __company__ = "National Institute of Allergy and Infectious Diseases"
