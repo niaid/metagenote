@@ -18,8 +18,8 @@ submissions to the public SRA database. For more information, please visit
 
 # Prerequisites #
 * Python 3.5 or newer
-* `xml.dom.minidom`: a minimal DOM implementation
-* `xml.etree.ElementTree`: the ElementTree API, a simple and lightweight XML processor
+* `xml.dom.minidom`: a minimal DOM implementation for Python
+* `xml.etree.ElementTree`: the ElementTree API, a simple and lightweight XML processor for Python
 * `ascp`: [Aspera secure copy](https://download.asperasoft.com/download/docs/entsrv/3.9.6/client_admin_win/webhelp/index.html)
 
 # Example Project #
