@@ -10,7 +10,7 @@ METAGENOTE (https://metagenote.niaid.nih.gov) is a project from the National Ins
 
 
 
-## METAGENOTE User Workflow
+## User Workflow
 
 
 
@@ -19,6 +19,8 @@ METAGENOTE (https://metagenote.niaid.nih.gov) is a project from the National Ins
 
 
 ### User Types
+
+
 
 #### Registered Users
 
@@ -50,9 +52,13 @@ The Published section in the My Workspace area lists sample groups accepted and 
 
 Lab sample groups are those that have been entered by members of the same lab. These sample annotations are displayed in a read-only and non-editable mode.
 
+
+
 #### Non-Registered Users
 
 Non-registered users submit their sample annotations directly to SRA without the storage and management features available to registered users.
+
+
 
 ### Select Template
 
@@ -60,7 +66,9 @@ METAGENOTE provides a wizard style selection to guide users when choosing the ap
 
 ![Templates](README.assets/data_src_packages.png "METAGENOTE Templates")
 
-#### Descriptions
+#### Template Descriptions
+
+
 
 ##### Metagenomics
 Study of genetic material recovered directly from environmental samples
@@ -356,9 +364,13 @@ Eukaryotic libraries sampled from, for example, tap/drinking water, swimming poo
 ##### Human-derived cell lines
 For samples isolated from humans use the Pathogen, Microbe or appropriate MIxS package. Only use for human-derived cell line samples that have no privacy concerns.
 
+
+
 ### Describe Samples: Sample Group Editor
 
 The Sample Group editor provides a tool with a familiar "Excel-like" experience that allows users to efficiently annotate their samples.
+
+
 
 * Required Attributes - indicates sample atributes required by NCBI. These attributes must be filled to be accepted to the SRA.
 
@@ -380,114 +392,236 @@ The Sample Group editor provides a tool with a familiar "Excel-like" experience 
 
 
 
+When users have completed furnishing their sample metadata. The final step is the SRA submission process. This process generates the formatted XML files SRA requires and transfers the sample group data to their servers.
+
+
+
 #### Upload Sequence Files
 
-Recognized Sequence File Types
+
+
+SRA requires the sample metadata be accompanied with their raw sequence files. Accepted formats are FASTQ, SFF, BAM, and HDF5. More information may be found at [SRA's file format page](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/).
 
 
 
 #### Map Samples to Sequence Files
 
-Auto Sequence Filename Grouping
+METAGENOTE will attempt to group and assign the uploaded sequence files to samples. Groupings, such as forward and reverse reads, is established using similarities and common filename conventions. Additionally, METAGENOTE will determine if assignments may be established when sample names are embedded in the sequence filenames.
 
 
 
 #### Describe Project
 
-- Project Name
+SRA requires a general project description for representation as a BioProject.
 
-- Project Title
 
-- Sequencing Platform
 
-- Sequencing Instrument
+**Project Name** - The title for public display
 
-  The choice of sequencing instrument is dependent on the Sequencing Platform specified.
+**Project Title** - A paragraph description of the study goals and relevance
 
-  * _LS454
-    * 454 GS
-    * 454 GS 20
-    * 454 GS FLX
-    * 454 GS FLX+
-    * 454 GS FLX Titanium
-    * 454 GS Junior
-  * ABI_SOLID
-    * AB 5500 Genetic Analyzer
-    * AB 5500xl Genetic Analyzer
-    * AB 5500x-Wl Genetic Analyzer
-    * AB SOLiD 3 Plus System
-    * AB SOLiD 4 System
-    * AB SOLiD 4hq System
-    * AB SOLiD PI System
-    * AB SOLiD System
-    * AB SOLiD System 2.0
-    * AB SOLiD System 3.0
-  * BGISEQ
-    * BGISEQ-500
-  * CAPILLARY
-    * AB 310 Genetic Analyzer
-    * AB 3130 Genetic Analyzer
-    * AB 3130xL Genetic Analyzer
-    * AB 3500 Genetic Analyzer
-    * AB 3500xL Genetic Analyzer
-    * AB 3730 Genetic Analyzer
-    * AB 3730xL Genetic Analyzer
-  * COMPLETE_GENOMIC
-    * Complete Genomics
-  * HELICOS
-    * Helicos HeliScope
-  * ILLUMINA
-    * HiSeq X Five
-    * HiSeq X Ten
-    * Illumina Genome Analyzer
-    * Illumina Genome Analyzer II
-      Illumina Genome Analyzer IIx
-    * Illumina HiScanSQ
-    * Illumina HiSeq 1000
-    * Illumina HiSeq 1500
-    * Illumina HiSeq 2000
-    * Illumina HiSeq 2500
-    * Illumina HiSeq 3000
-    * Illumina HiSeq 4000
-    * Illumina iSeq 100
-    * Illumina NovaSeq 6000
-    * Illumina MiniSeq
-    * Illumina MiSeq
-    * NextSeq 500
-    * NextSeq 550
-  * ION_TORRENT
-    * Ion Torrent PGM
-    * Ion Torrent Proton
-    * Ion Torrent S5 XL
-    * Ion Torrent S5
-  * OXFORD_NANOPORE
-    * GridION
-    * MinION
-    * PromethION
-    * PACBIO_SMRT
-    * PacBio RS
-    * PacBio RS II
-    * PacBio Sequel
+**Sequencing Platform**
 
-- Read Orientation
+- _LS454
+* ABI_SOLID
+* BGISEQ
+* CAPILLARY
+* COMPLETE_GENOMIC
+* HELICOS
+* ILLUMINA
+* ION_TORRENT
+* OXFORD_NANOPORE
 
-- Library Strategy
+**Sequencing Instrument**
 
-- Data Type
+The choice of sequencing instrument is dependent on the Sequencing Platform specified.
 
-- Library Source
+* _LS454
+  * 454 GS
+  * 454 GS 20
+  * 454 GS FLX
+  * 454 GS FLX+
+  * 454 GS FLX Titanium
+  * 454 GS Junior
+* ABI_SOLID
+  * AB 5500 Genetic Analyzer
+  * AB 5500xl Genetic Analyzer
+  * AB 5500x-Wl Genetic Analyzer
+  * AB SOLiD 3 Plus System
+  * AB SOLiD 4 System
+  * AB SOLiD 4hq System
+  * AB SOLiD PI System
+  * AB SOLiD System
+  * AB SOLiD System 2.0
+  * AB SOLiD System 3.0
+* BGISEQ
+  * BGISEQ-500
+* CAPILLARY
+  * AB 310 Genetic Analyzer
+  * AB 3130 Genetic Analyzer
+  * AB 3130xL Genetic Analyzer
+  * AB 3500 Genetic Analyzer
+  * AB 3500xL Genetic Analyzer
+  * AB 3730 Genetic Analyzer
+  * AB 3730xL Genetic Analyzer
+* COMPLETE_GENOMIC
+  * Complete Genomics
+* HELICOS
+  * Helicos HeliScope
+* ILLUMINA
+  * HiSeq X Five
+  * HiSeq X Ten
+  * Illumina Genome Analyzer
+  * Illumina Genome Analyzer II
+    Illumina Genome Analyzer IIx
+  * Illumina HiScanSQ
+  * Illumina HiSeq 1000
+  * Illumina HiSeq 1500
+  * Illumina HiSeq 2000
+  * Illumina HiSeq 2500
+  * Illumina HiSeq 3000
+  * Illumina HiSeq 4000
+  * Illumina iSeq 100
+  * Illumina NovaSeq 6000
+  * Illumina MiniSeq
+  * Illumina MiSeq
+  * NextSeq 500
+  * NextSeq 550
+* ION_TORRENT
+  * Ion Torrent PGM
+  * Ion Torrent Proton
+  * Ion Torrent S5 XL
+  * Ion Torrent S5
+* OXFORD_NANOPORE
+  * GridION
+  * MinION
+  * PromethION
+  * PACBIO_SMRT
+  * PacBio RS
+  * PacBio RS II
+  * PacBio Sequel
 
-- Library Selection
+**Read Orientation**
 
-- Description
+- Forward
+- Reverse
 
-- Corresponding Email
+**Library Strategy**
 
-- Contact Person or PI
+- AMPLICON 
+ *  ATAC-seq 
+ *  Bisulfite-Seq 
+ *  ChIA-PET 
+ *  ChIP-Seq 
+ *  CLONE 
+ *  CLONEEND 
+ *  CTS 
+ *  DNase-Hypersensitivity 
+ *  EST 
+ *  FAIRE-seq 
+ *  FINISHING 
+ *  FL-cDNA 
+ *  Hi-C 
+ *  MBD-Seq 
+ *  MeDIP-Seq 
+ *  miRNA-Seq 
+ *  MNase-Seq 
+ *  MRE-Seq 
+ *  ncRNA-Seq 
+ *  OTHER 
+ *  POOLCLONE 
+ *  RAD-Seq 
+ *  RIP-Seq 
+ *  RNA-Seq 
+ *  SELEX 
+ *  ssRNA-seq 
+ *  Synthetic-Long-Read 
+ *  Targeted-Capture 
+ *  Tethered Chromatin Conformation Capture 
+ *  Tn-Seq 
+ *  WCS 
+ *  WGA 
+ *  WGS 
+ *  WXS 
 
-- Hold Release Date
+**Data Type**
 
-  
+- Assembly
+* Clone Ends
+* Epigenomics
+* Exome
+* Genome Sequencing
+* Genotype
+* MAP
+* Metagenome
+* Metagenomic Assembly
+* Other
+* Phenotype
+* Proteomic
+* Random Survey
+* Targeted Loci
+* Transcriptome
+* Variation
+
+**Library Source**
+
+* Genomic Single Cell
+* Genomic
+* Metagenomic
+* Metatranscriptomic
+* Other
+* Synthetic
+* Transcriptomic Single Cell
+* Transcriptomic
+* Viral RNA
+
+**Library Selection**
+
+* 5-methylcytidine antibody
+* CAGE
+* cDNA
+* cDNA_oligo_dT
+* cDNA_randomPriming
+* CF-H
+* CF-M
+* CF-S
+* CF-T
+* ChIP
+* DNAse
+* HMPR
+* Hybrid Selection
+* Inverse rRNA
+* MBD2 protein methyl-CpG binding domain
+* MDA
+* MF
+* MNase
+* MSLL
+* Oligo-dT
+* other
+* Padlock probes capture method
+* PCR
+* PolyA
+* RACE
+* RANDOM
+* RANDOM PCR
+* Reduced Representation
+* repeat fractionation
+* Restriction Digest
+* RT-PCR
+* size fractionation
+* unspecified
+
+**Description**
+
+Relevant information about the submission, such as the summary of the project and experiments, title and abstract of the published manuscript, contact person(s), and/or name(s) of the principal investigator(s). As an example: Alterations in the intestinal microbiome and loss of mucosal integrity contribute to inflammation during HIV disease. The intestinal microbiome was analyzed among 12 participants. Intestinal microbiota diversity, phyla and family abundance demonstrated stability after rh-lactoferrin or placebo treatment. See [PRJNA513489](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA513489) for additional details.
+
+**Corresponding Email** - the user's contact email
+
+**Contact Person or PI**
+
+**Hold Release Date** - set a public release date for SRA
+
+
 
 ## Metadata Standardization in METAGENOTE
 
