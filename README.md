@@ -14,7 +14,7 @@ METAGENOTE (https://metagenote.niaid.nih.gov) is a project from the National Ins
 
 
 
-![UserWorkflow](README.assets/METAGENOTE User Work Flow.png "METAGENOTE User Workflow")
+![UserWorkflow](./README.assets/METAGENOTE%20User%20Work%20Flow.png "METAGENOTE User Workflow")
 
 
 
