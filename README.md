@@ -55,7 +55,7 @@ Non-registered users submit their sample annotations directly to SRA without the
 
 METAGENOTE provides a wizard style selection to guide users when choosing the appropriate BioSample Package for their samples. Selection is done in two general stages, select data source then package selection, to help the user target narrow and target the appropriate choice.
 
-![img](file:////Users/lioudt/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
+![img](../assets/data_src_packages.png?raw=true)
 
 #### Descriptions
 
